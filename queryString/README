@@ -1,0 +1,10 @@
+querystring.parse(str[, sep[, eq[, options]]]):
+把一个URL查询字符串(序列化的字符串)解析为一个对象.
+例如:
+    "foo=bar&abc=xyz&abc=123"被解析成:
+    {
+      foo: 'bar',
+      abc: ['xyz', '123']
+    }
+querystring.stringify(obj[, sep[, eq[, options]]])
+把一个对象序列化成 URL 查询字符串

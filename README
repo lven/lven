@@ -1,0 +1,18 @@
+1.AJAX发送一个请求
+2.node的server是否能获取响应.
+    注意:发送请求的格式.
+
+
+爬坑1:当最简单设置ajax格式时候,报错.
+     $.ajax({
+                url: 'http://127.0.0.1:1000/',
+                success: function (data) {
+                    console.log('Success: ')
+                },
+            });
+    Failed to load http://127.0.0.1:1000/: The 'Access-Control-Allow-Origin' header has a value 'http://127.0.0.1' that is not equal to the supplied origin. Origin 'http://localhost:63342' is therefore not allowed access.
+    解析:
+    浏览器默认禁止跨域.
+    为设置Access-Control-Allow-Origin的url
+
+爬坑2:node.js提示.
