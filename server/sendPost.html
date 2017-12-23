@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js\jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<h1 style="text-align:center">本地发送一个请求</h1>
+<div style="text-align:center">最简单的请求</div>
+</body>
+<script>
+    $(function () {
+        $.ajax({
+            url: 'http://127.0.0.1:1000/',
+            success: function (data) {
+                console.log('Success:请求执行成功! ')
+            },
+        });
+    })
+</script>
+</html>
